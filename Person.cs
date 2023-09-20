@@ -65,13 +65,13 @@ namespace Lab1
 
         public string DisplayPersonInfo()
         {
-            string formatted = "";
+            //string formatted = "";
 
-            formatted = $"{id}:, {firstname}, {lastname}'s facorite colour is, {favoriteColour}\n";
+            //formatted = $"{id}:, {firstname}, {lastname}'s favorite colour is, {favoriteColour}\n";
 
+            //return formatted;
 
-            return formatted;
-
+            return $"{id}:, {firstname}, {lastname}'s favorite colour is, {favoriteColour}\n";
         }
 
         public void ChangeFavoriteColour()
@@ -79,5 +79,25 @@ namespace Lab1
             favoriteColour = "white";
         }
 
+        public int GetAgeInTenYears()
+        {
+            int ageInTenYears = age + 10;
+
+            return ageInTenYears;
+        }
+
+        public override string ToString()
+        {
+            string formatted = "";
+
+            formatted += $"PersonID:\t\t {id}\n";
+            formatted += $"FirstName: {firstname}\n";
+            formatted += $"LastName: {lastname}\n";
+            formatted += $"FavoriteColour: {favoriteColour}\n";
+            formatted += $"Age: {age}\n";
+            formatted += $"IsWorking: {isWorking}\n";
+
+            return formatted;
+        }
     }
 }
