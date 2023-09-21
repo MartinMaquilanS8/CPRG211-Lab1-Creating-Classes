@@ -46,15 +46,23 @@
 
             Console.WriteLine($"Average age is: {average}\n");
 
+            Person youngest = people.OrderBy(person => person.Age).First();
+            Person oldest = people.OrderByDescending(person => person.Age).First();
 
+            Console.WriteLine($"The youngest person is: {youngest.FirstName}");
+            Console.WriteLine($"The oldest person is: {oldest.FirstName}");
 
             foreach (Person person in people)
             {
                 if (person.FirstName.StartsWith("M"))
                 {
-                    Console.WriteLine($"Person whose first name starts with 'M': {person.FirstName} {person.LastName}");
+                    Console.WriteLine(person.ToString());
                 }
+            }
 
+
+            foreach (Person person in people)
+            {
                 if (person.FavoriteColour.Equals("Blue", StringComparison.OrdinalIgnoreCase))
                 {
                     Console.WriteLine(person.ToString());
