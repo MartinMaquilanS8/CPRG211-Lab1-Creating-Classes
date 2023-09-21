@@ -50,13 +50,15 @@
             Person oldest = people.OrderByDescending(person => person.Age).First();
 
             Console.WriteLine($"The youngest person is: {youngest.FirstName}");
-            Console.WriteLine($"The oldest person is: {oldest.FirstName}");
+            Console.WriteLine($"The oldest person is: {oldest.FirstName}\n");
+
+            Console.WriteLine("These are the names that start with M:\n");
 
             foreach (Person person in people)
             {
                 if (person.FirstName.StartsWith("M", StringComparison.OrdinalIgnoreCase))
                 {
-                    Console.WriteLine($"{person.FirstName}");
+                    Console.WriteLine($"{person.FirstName}\n");
                 }
             }
 
