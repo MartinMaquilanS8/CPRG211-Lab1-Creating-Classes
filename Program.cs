@@ -54,7 +54,6 @@
 
             foreach (Person person in people)
             {
-                //if (person.FirstName.StartsWith("M"))
                 if (person.FirstName.StartsWith("M", StringComparison.OrdinalIgnoreCase))
                 {
                     Console.WriteLine($"{person.FirstName}");
