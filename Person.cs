@@ -41,7 +41,7 @@ namespace Lab1
            this.id = id;
            this.firstName = firstName;
            this.lastName = lastName;   
-           FavoriteColour = favoriteColour;
+           this.favoriteColour = favoriteColour;
            Age = age;
            IsWorking = isWorking;
         }
