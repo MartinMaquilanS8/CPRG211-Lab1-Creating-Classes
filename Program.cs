@@ -54,16 +54,18 @@
 
             foreach (Person person in people)
             {
-                if (person.FirstName.StartsWith("M"))
+                //if (person.FirstName.StartsWith("M"))
+                if (person.FirstName.StartsWith("M", StringComparison.OrdinalIgnoreCase))
                 {
-                    Console.WriteLine(person.ToString());
+                    Console.WriteLine($"{person.FirstName}");
                 }
             }
 
             foreach (Person person in people)
             {
                 if (person.FavoriteColour.Equals("Blue", StringComparison.OrdinalIgnoreCase))
-                {
+                {   
+                    Console.WriteLine($"Person who likes the color Blue: {person.FirstName}");
                     Console.WriteLine(person.ToString());
                 }
             }
