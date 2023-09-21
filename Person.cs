@@ -68,7 +68,7 @@ namespace Lab1
 
             //return formatted;
 
-            return $"{id}:, {firstName}, {lastName}'s favorite colour is, {favoriteColour}\n";
+            return $"{id}: {firstName} {lastName}'s favorite colour is: {favoriteColour}\n";
         }
 
         public void ChangeFavoriteColour()
@@ -87,7 +87,7 @@ namespace Lab1
         {
             string formatted = "";
 
-            formatted += $"PersonID:\t\t {id}\n";
+            formatted += $"PersonID: {id}\n";
             formatted += $"FirstName: {firstName}\n";
             formatted += $"LastName: {lastName}\n";
             formatted += $"FavoriteColour: {favoriteColour}\n";
