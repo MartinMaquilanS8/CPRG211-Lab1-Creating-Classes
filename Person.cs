@@ -17,22 +17,11 @@ namespace Lab1
 
         public int Id { get { return id; } set {  id = value; } }
 
-        // public int Id { get => id; set => id = value; }
-
         public string FirstName { get {  return firstName; } set {  firstName = value; } }
-
-        // public string FirstName { get => firstName; set => firstName = value; }
-
 
         public string LastName { get { return lastName; } set {  lastName = value; } }
 
-        // public string LastName { get => lastName; set => lastName = value; }
-
-
         public string FavoriteColour { get {  return favoriteColour; } set {  favoriteColour = value; } }
-
-        // public string FavoriteColor { get => favoriteColor; set => favoriteColor = value; }
-
 
         public int Age
         {
@@ -47,9 +36,6 @@ namespace Lab1
         }
         public bool IsWorking { get {  return isWorking; } set {  isWorking = value; } }
 
-        // public bool IsWorking { get => isWorking; set => isWorking = value; }
-
-
         public Person(int id, string firstName, string lastName, string favoriteColour, int age, bool isWorking)
         {
            this.id = id;
@@ -62,12 +48,6 @@ namespace Lab1
 
         public string DisplayPersonInfo()
         {
-            //string formatted = "";
-
-            //formatted = $"{id}:, {firstname}, {lastname}'s favorite colour is, {favoriteColour}\n";
-
-            //return formatted;
-
             return $"{id}: {firstName} {lastName}'s favorite colour is: {favoriteColour}\n";
         }
 
