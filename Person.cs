@@ -9,8 +9,8 @@ namespace Lab1
     internal class Person
     {
         private int id;
-        private string firstname;
-        private string lastname;
+        private string firstName;
+        private string lastName;
         private string favoriteColour;
         private int age;
         private bool isWorking;
@@ -19,12 +19,12 @@ namespace Lab1
 
         // public int Id { get => id; set => id = value; }
 
-        public string Firstname { get {  return firstname; } set {  firstname = value; } }
+        public string FirstName { get {  return firstName; } set {  firstName = value; } }
 
         // public string FirstName { get => firstName; set => firstName = value; }
 
 
-        public string Lastname { get { return lastname; } set {  lastname = value; } }
+        public string LastName { get { return lastName; } set {  lastName = value; } }
 
         // public string LastName { get => lastName; set => lastName = value; }
 
@@ -50,14 +50,11 @@ namespace Lab1
         // public bool IsWorking { get => isWorking; set => isWorking = value; }
 
 
-        public Person(int id, string firstname, string lastname, string favoriteColour, int age, bool isWorking)
+        public Person(int id, string firstName, string lastName, string favoriteColour, int age, bool isWorking)
         {
-           Id = id;
-           Firstname = firstname; 
-           Lastname = lastname;
-           //this.id = id;
-           //this.firstname = firstname;
-           //this.lastname = lastname;   
+           this.id = id;
+           this.firstName = firstName;
+           this.lastName = lastName;   
            FavoriteColour = favoriteColour;
            Age = age;
            IsWorking = isWorking;
@@ -71,7 +68,7 @@ namespace Lab1
 
             //return formatted;
 
-            return $"{id}:, {firstname}, {lastname}'s favorite colour is, {favoriteColour}\n";
+            return $"{id}:, {firstName}, {lastName}'s favorite colour is, {favoriteColour}\n";
         }
 
         public void ChangeFavoriteColour()
@@ -91,8 +88,8 @@ namespace Lab1
             string formatted = "";
 
             formatted += $"PersonID:\t\t {id}\n";
-            formatted += $"FirstName: {firstname}\n";
-            formatted += $"LastName: {lastname}\n";
+            formatted += $"FirstName: {firstName}\n";
+            formatted += $"LastName: {lastName}\n";
             formatted += $"FavoriteColour: {favoriteColour}\n";
             formatted += $"Age: {age}\n";
             formatted += $"IsWorking: {isWorking}\n";
